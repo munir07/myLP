@@ -14,9 +14,16 @@
                 Please enter the artist name
               </mat-error>
           </mat-form-field>
-          <mat-form-field>
-              <input matInput name="rating" placeholder="Rating" value="15" ngModel>
-          </mat-form-field>
+          <mat-slider         
+                [max]="max"
+                [min]="min"
+                [step]="step"
+                [thumbLabel]="thumbLabel"
+                [tickInterval]="tickInterval"
+                name="rating" placeholder="Rating" ngModel>
+          </mat-slider>
+              <!-- <input matInput name="rating" placeholder="Rating" value="15" ngModel> -->
+
           <mat-form-field>
               <input matInput name="image" placeholder="Image Name" ngModel>
           </mat-form-field>
