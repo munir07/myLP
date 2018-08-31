@@ -1,0 +1,14 @@
+<mat-card>
+        <!-- Loop thru items -->
+        <mat-card *ngFor="let t of myList; let i=index">
+          <mat-card-content>
+            <h3>{{t.album}}</h3>
+            <!-- <div fxLayoutAlign="space-between"> -->
+            <div>
+              <span>{{t.artist}}</span>
+              <span>{{t.rating}}</span>
+              <span>{{t.image}}</span> 
+            </div>
+          </mat-card-content>
+        </mat-card>
+    </mat-card>
