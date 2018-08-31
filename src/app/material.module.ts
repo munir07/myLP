@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 
-//import { FlexLayoutModule } from '@angular/flex-layout' 
+import { FlexLayoutModule } from '@angular/flex-layout' 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -10,7 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider'
 
 const MODULES = [
-    //FlexLayoutModule,
+    FlexLayoutModule,
     MatToolbarModule, MatInputModule, MatFormFieldModule, 
     MatButtonModule, MatCardModule,
     MatIconModule, MatSliderModule

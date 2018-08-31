@@ -1,7 +1,6 @@
 <form #myLPForm="ngForm" (ngSubmit)=processForm()>
   <mat-card>
-    <div>
-      <div>
+      <div fxLayout="column" fxLayoutGap="15px">
           <mat-form-field>
               <input matInput name="album" placeholder="Album Name" ngModel required>
               <mat-error>
@@ -14,22 +13,23 @@
                 Please enter the artist name
               </mat-error>
           </mat-form-field>
-          <mat-slider         
+          <!-- <div> -->
+            <span>Rating</span>
+            <mat-slider         
                 [max]="max"
                 [min]="min"
                 [step]="step"
                 [thumbLabel]="thumbLabel"
                 [tickInterval]="tickInterval"
-                name="rating" placeholder="Rating" ngModel>
-          </mat-slider>
-              <!-- <input matInput name="rating" placeholder="Rating" value="15" ngModel> -->
-
+                name="rating" ngModel>
+            </mat-slider>
+          <!-- </div> -->
           <mat-form-field>
               <input matInput name="image" placeholder="Image Name" ngModel>
           </mat-form-field>
       </div>
       <!-- <div class="button-row" fxLayoutAlign="end" fxLayoutGap="10px"> -->
-      <div>
+      <div fxLayoutAlign="end" fxLayoutGap="10px">
         <button mat-raised-button color="accent" type="reset">
             <mat-icon>clear</mat-icon>
             <span>Clear</span>
@@ -39,7 +39,6 @@
           <span>Add</span>
         </button>
       </div>
-    </div>
   </mat-card>
 
 
